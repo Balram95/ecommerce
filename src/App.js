@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import Classes from './App.module.css';
-import Header from './Components/Header'
+import Header from './Components/Header/Header';
+import logo from '../public/imgs/image1'
 
 class App extends Component {
   state={
     imgs:[{
-      src='./public/imgs/image1.jpg'
-    },
-    {
-      src='./public/imgs/image3.jpg'
-    },
-    {
-      src='./public/imgs/image2.jpg'
-    }]
+      src:logo
+    }
+    ]
   }
   render() {
     return (
