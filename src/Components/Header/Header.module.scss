@@ -1,5 +1,6 @@
 .Header{
   height: 100vh;
+  background-color: black
 }
 .slideshow-container {
   max-width: 1000px;
@@ -7,9 +8,13 @@
   margin: auto;
 }
 
+.image{
+  width:100%;
+  height: 100vh;
+}
 
 .mySlides {
-  display: none;
+  display: block;
 }
 
 
@@ -28,6 +33,18 @@
   user-select: none;
 }
 
+.myButton{
+  display: block;
+  padding: 4px;
+  background-color: white;
+  color:grey;
+  font-size: 15px;
+  cursor: pointer;
+}
+.myButton:hover{
+  letter-spacing: 6px;
+}
+
 
 .next {
   right: 0;
@@ -40,13 +57,16 @@
 }
 
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: white;
+  font-size: 55px;
+  border: 2px solid white;
+  padding: -32px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+  width: 20%;
+  display: block;
   text-align: center;
+  letter-spacing: 3px;
+  opacity: 1 !important;
 }
 
 .numbertext {
@@ -55,6 +75,11 @@
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+.dots{
+  position: absolute;
+  bottom: 5px;
+  left: 50%
 }
 
 
@@ -77,15 +102,19 @@
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 15s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  0% {opacity: .1}
+  40% {opacity: 0.8}
+  80% {opacity: 0.8}
+  100% {opacity: .3}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  0% {opacity: .1}
+  40% {opacity: 0.8}
+  80% {opacity: 0.8}
+  100% {opacity: .3}
 }
