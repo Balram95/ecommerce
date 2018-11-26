@@ -1,0 +1,44 @@
+.Content{
+  display: flex;
+  height:auto;
+  margin: 3rem;
+}
+.description{
+
+  width: 50%;
+  padding: 2%;
+}
+.title{
+    font-size: 4.5rem;
+    letter-spacing: .4rem;
+}
+.desc{
+  font-size: 2rem;
+  letter-spacing: .3rem;
+
+}
+.Content img{
+  width: 50%;
+
+
+}
+.MainCategory{
+  margin-top: 5%;
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  left:10%;
+  right:10%;
+}
+
+.Button{
+  padding: 1rem;
+  background-color: black;
+  color:white;
+  display: inline-block;
+  font-size: 2rem;
+}
+.Button:hover{
+  cursor: pointer;
+  letter-spacing:.3rem
+}

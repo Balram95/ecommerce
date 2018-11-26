@@ -1,0 +1,18 @@
+.myShop_list{
+  display: flex;
+}
+.myShop_list ul{
+  list-style: none;
+  border-right: 1px solid black;
+  // padding: 1rem;
+}
+.myShop_list ul li{
+  font-size: 1.5rem;
+}
+.ShopList{
+  padding: 0 10%;
+  position: fixed;
+  width: 80%;
+  top:10rem;
+  background-color: white;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Class from './Navbar.module.scss';
+import ShopList from '../ShopList/ShopList';
 
 class Navbar extends Component {
 
@@ -13,6 +14,7 @@ class Navbar extends Component {
           <li>Offers</li>
           <li>Search</li>
         </ul>
+        <ShopList/>
       </div>
     );
   }

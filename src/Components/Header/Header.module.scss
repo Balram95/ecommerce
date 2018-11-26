@@ -3,7 +3,7 @@
   background-color: black
 }
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100rem;
   position: relative;
   margin: auto;
 }
@@ -18,75 +18,50 @@
 }
 
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
 .myButton{
   display: block;
-  padding: 4px;
+  padding: .4rem;
   background-color: white;
   color:grey;
-  font-size: 15px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 .myButton:hover{
-  letter-spacing: 6px;
+  letter-spacing: .6rem;
 }
 
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
 .text {
   color: white;
-  font-size: 55px;
-  border: 2px solid white;
-  padding: -32px;
+  font-size: 5.5rem;
+  border: .3rem solid white;
+  padding: -1rem;
   position: absolute;
   width: 20%;
   display: block;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: .3rem;
   opacity: 1 !important;
 }
 
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+  font-size: 1.2rem;
+  padding: 1.2rem;
   position: absolute;
   top: 0;
 }
 .dots{
   position: absolute;
-  bottom: 5px;
+  bottom: .5rem;
   left: 50%
 }
 
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;

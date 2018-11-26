@@ -8,7 +8,7 @@ class Header extends Component {
 
   HandleSlide=function() {
     let current=0;
-    if(this.state.currentSlide<this.props.images.length-1){
+    if(this.state.currentSlide<this.props.banners.length-1){
       current=this.state.currentSlide+1
     }
     this.setState({
@@ -20,42 +20,55 @@ class Header extends Component {
       currentSlide:n
     })
   }
+  componentDidUpdate(){
+    this.turnOff=setTimeout(()=> {
+      this.HandleSlide()
+    }, 15000);
+  }
+  componentWillUnmount(){
+    clearTimeout(this.turnOff);
+  }
   render() {
     var style=null;
-    var topLeft={
-      bottom: '400px',
-      left: '300px',
-    }
-    var BottomLeft={
-      bottom: '400px',
-      left: '800px',
-    }
     var myBackgroundImageList=null;
-    console.log(this.props.images);
     var classNames=[Class.mySlides,Class.fade]
-    console.log(classNames.join(' '));
-    if(this.props.images){
-        myBackgroundImageList = this.props.images.map((img,i)=>{
-          if(img.textPosition==='topLeft'){
+    if(this.props.banners){
+        myBackgroundImageList = this.props.banners.map((banner,i)=>{
+          if(banner.text_position==='topLeft'){
             style={
-              top: '100px',
-              right: '100px',
+              top: '10rem',
+              left: '50rem',
             }
-          }else if(img.textPosition==='BottomLeft'){
+          }else if(banner.text_position==='bottomLeft'){
             style={
-              bottom: '100px',
-              left: '200px',
+              bottom: '20rem',
+              left: '20rem',
             }
-          }else{
+          }else if(banner.text_position==='topRight'){
             style={
-              bottom: '100px',
-              left: '800px',
+              top: '10rem',
+              right: '10rem',
+            }
+        }else if(banner.text_position==='bottomRight'){
+            style={
+              bottom: '20rem',
+              right: '40rem',
+            }
+        }else if(banner.text_position==='center'){
+            style={
+              bottom: '30rem',
+              left: '30rem',
+          }
+        }else{
+            style={
+              bottom: '40rem',
+              left: '10rem',
             }
           }
           return <div key={i} className={classNames.join(' ')}>
-            <div className={Class.numbertext}>{i+1} / {this.props.images.length}</div>
-            <img className={Class.image} src={img.src}/>
-            <div className={Class.text} style={style}>{img.Content}
+            <div className={Class.numbertext}>{i+1} / {this.props.banners.length}</div>
+            <img className={Class.image} src={banner.image} alt="Vikas's ecommerce"/>
+            <div className={Class.text} style={style}>{banner.content}
             <div className={Class.myButton}>Shop Now</div>
             </div>
             </div>
@@ -63,24 +76,19 @@ class Header extends Component {
       )
     }
 
-    setTimeout(()=> {
-      this.HandleSlide()
-    }, 15000);
-     var myBackgroundImage=myBackgroundImageList[this.state.currentSlide]
 
-    console.log(myBackgroundImageList);
+     var myBackgroundImage=myBackgroundImageList[this.state.currentSlide]
 
     return (
       <div className={Class.Header}>
-      <div>
-      {myBackgroundImage}
-      <div className={Class.dots} style={{textAlign:'center'}}>
-        <span className={Class.dot} onClick={()=>this.currentSlide(0)}></span>
-        <span className={Class.dot} onClick={()=>this.currentSlide(1)}></span>
-        <span className={Class.dot} onClick={()=>this.currentSlide(2)}></span>
-      </div>
-
-      </div>
+        <div>
+          {myBackgroundImage}
+          <div className={Class.dots} style={{textAlign:'center'}}>
+            <span className={Class.dot} onClick={()=>this.currentSlide(0)}></span>
+            <span className={Class.dot} onClick={()=>this.currentSlide(1)}></span>
+            <span className={Class.dot} onClick={()=>this.currentSlide(2)}></span>
+          </div>
+        </div>
       </div>
     );
   }
