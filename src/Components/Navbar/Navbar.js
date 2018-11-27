@@ -14,7 +14,7 @@ class Navbar extends Component {
           <li>Offers</li>
           <li>Search</li>
         </ul>
-        <ShopList/>
+        
       </div>
     );
   }

@@ -20,6 +20,7 @@
 .Product_main{
   display: block;
   width: 210%;
+
 }
 .subProucts{
   display: block;
@@ -33,6 +34,7 @@
 
 .main_image{
   width:100%;
+
 }
 .main_image:hover{
   cursor: pointer;
@@ -54,6 +56,7 @@
 
 .sub_image1{
   width:35%;
+  height: 100%;
 }
 .sub_image1:hover{
   cursor: pointer;
@@ -61,6 +64,7 @@
 .sub_image2{
   width:35%;
   float: right;
+  height: 100%;
 }
 .sub_image2:hover{
   cursor: pointer;
