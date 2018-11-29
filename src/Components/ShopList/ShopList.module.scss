@@ -1,18 +1,44 @@
 .myShop_list{
   display: flex;
+  justify-content: space-around;
 }
 .myShop_list ul{
   list-style: none;
-  border-right: 1px solid black;
-  // padding: 1rem;
+  // border-right: 1px solid black;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+
 }
 .myShop_list ul li{
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: .5rem;
+  letter-spacing: 0.3rem;
+  color: white;
+  width: 100%;
+}
+.myShop_list ul li:hover{
+  background-color: rgba(255,255,255,0.3);
+  color: black;
+  cursor: pointer
 }
 .ShopList{
-  padding: 0 10%;
   position: fixed;
-  width: 80%;
-  top:10rem;
-  background-color: white;
+  width: 100%;
+  margin: 0;
+  top:5.5rem;
+  background-color: rgba(0,0,0,0.7);
+  animation: bottomToTop 1s;
+}
+
+@keyframes bottomToTop{
+  0%{
+    transform: translateY(20rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
