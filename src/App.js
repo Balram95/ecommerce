@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import ProductOfTheWeek from './Components/ProductOfTheWeek/ProductOfTheWeek';
 import LogoBanner from './Components/LogoBanner/LogoBanner';
 import MainCategory from './Components/MainCategory/MainCategory';
+import { BrowserRouter } from 'react-router-dom'
 import logo from './imgs/image1.jpg'
 import logo1 from './imgs/image2.jpg'
 import logo2 from './imgs/image3.jpg'
@@ -85,13 +86,15 @@ class App extends Component {
   render() {
     var ProductsOfTheWeek=[this.state.product[0],this.state.product[1],this.state.product[2]]
     return (
-      <div>
-        <Navbar/>
-        <Header banners={this.state.banners}/>
-        <ProductOfTheWeek Products={ProductsOfTheWeek}/>
-        <LogoBanner Banner={image4}/>
-        <MainCategory Categories={this.state.Categories}/>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Navbar/>
+          <Header banners={this.state.banners}/>
+          <ProductOfTheWeek Products={ProductsOfTheWeek}/>
+          <LogoBanner Banner={image4}/>
+          <MainCategory Categories={this.state.Categories}/>
+        </div>
+      </BrowserRouter>
     );
   }
 }
