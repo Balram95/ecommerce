@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Class from './Items.module.scss'
-import image1 from '../../../imgs/image1.jpg'
+import image1 from '../../../imgs/image5.jpg'
 
 
 class Items extends Component {
