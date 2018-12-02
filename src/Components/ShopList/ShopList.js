@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Class from './ShopList.module.scss';
-import {Route , Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 class ShopList extends Component {
   render() {
@@ -8,7 +8,7 @@ class ShopList extends Component {
       <div className={Class.ShopList}>
         <div className={Class.myShop_list}>
           <ul>
-            <li><Link to='/shirts'>Shirts</Link></li>
+            <li onClick={this.props.hideBar}><Link to='/shirts'>Shirts</Link></li>
             <li><Link to='/jeans'>Jeans</Link></li>
             <li><Link to='/shoes'>Shoes</Link></li>
 

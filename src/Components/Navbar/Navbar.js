@@ -16,7 +16,7 @@ class Navbar extends Component {
   render() {
     var content=null;
     if(this.state.showShopList){
-      content= <ShopList/>
+      content= <ShopList hideBar={this.showBar}/>
     }
     return (
       <div className={Class.navbar}>
