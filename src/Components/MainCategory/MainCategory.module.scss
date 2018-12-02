@@ -1,15 +1,18 @@
 .Content{
   display: flex;
   height:auto;
-  margin: 3rem;
+  // margin: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .description{
-
-  width: 50%;
+  width: 50rem;
+  display: inline-block;
   padding: 2%;
 }
 .title{
     font-size: 4.5rem;
+    margin: 0rem;
     letter-spacing: .4rem;
 }
 .desc{
@@ -18,18 +21,17 @@
 
 }
 .Content img{
-  width: 50%;
-  height: 100%;
-
+  width: 40rem;
+  height: 90%;
 
 }
 .MainCategory{
   margin-top: 5%;
-  width: 80%;
+  width: 90%;
   text-align: center;
   position: absolute;
-  left:10%;
-  right:10%;
+  left:5%;
+  right:5%;
 }
 
 .Button{

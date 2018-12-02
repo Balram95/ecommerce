@@ -1,9 +1,9 @@
 .Header{
   height: 100vh;
-  background-color: black
+  background-color: black;
+  width: 100%;
 }
 .slideshow-container {
-  max-width: 100rem;
   position: relative;
   margin: auto;
 }
@@ -33,11 +33,11 @@
 
 .text {
   color: white;
-  font-size: 5.5rem;
+  font-size: 5.0rem;
   border: .3rem solid white;
   padding: -1rem;
   position: absolute;
-  width: 20%;
+  width: 30rem;
   display: block;
   text-align: center;
   letter-spacing: .3rem;

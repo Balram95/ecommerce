@@ -36,33 +36,33 @@ class Header extends Component {
         myBackgroundImageList = this.props.banners.map((banner,i)=>{
           if(banner.text_position==='topLeft'){
             style={
-              top: '10rem',
-              left: '50rem',
+              top: '10%',
+              left: '50%',
             }
           }else if(banner.text_position==='bottomLeft'){
             style={
-              bottom: '20rem',
-              left: '20rem',
+              bottom: '20%',
+              left: '20%',
             }
           }else if(banner.text_position==='topRight'){
             style={
-              top: '10rem',
-              right: '10rem',
+              top: '10%',
+              right: '10%',
             }
         }else if(banner.text_position==='bottomRight'){
             style={
-              bottom: '20rem',
-              right: '40rem',
+              bottom: '20%',
+              right: '10%',
             }
         }else if(banner.text_position==='center'){
             style={
-              bottom: '30rem',
-              left: '30rem',
+              bottom: '30%',
+              left: '30$',
           }
         }else{
             style={
-              bottom: '40rem',
-              left: '10rem',
+              bottom: '10%',
+              left: '10%',
             }
           }
           return <div key={i} className={classNames.join(' ')}>

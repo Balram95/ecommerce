@@ -10,6 +10,12 @@ html{
   font-size: 62.33%;
 }
 
+@media only screen and (max-width: 500px) {
+  html{
+    font-size: 32.33%;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

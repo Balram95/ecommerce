@@ -27,15 +27,14 @@ class ProductOfTheWeek extends Component {
                           </div>
                       </div>
                       <div className={Class.Product_sub}>
-                      <div className={Class.Sub_container}>
-                        <p className={Class.title}>{this.props.Products[2].productName}</p>
-                        <p className={Class.description}>{this.props.Products[2].productPrice}</p>
-                      </div>
+                          <div className={Class.Sub_container}>
+                            <p className={Class.title}>{this.props.Products[2].productName}</p>
+                            <p className={Class.description}>{this.props.Products[2].productPrice}</p>
+                          </div>
                           <img className={Class.sub_image2} src={this.props.Products[2].productImage} alt="Vikas's ecommerce"/>
-
                       </div>
                   </div>
-                  
+
             </div>
       </div>
     );

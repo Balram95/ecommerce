@@ -1,10 +1,8 @@
 .ProductOfTheWeek {
-  width: 70%;
-  // height: 100vh;
-  padding: 0 15%;
+  width: 80%;
+  padding: 0 10%;
   display: block;
   position: relative;
-  // margin: 5rem 0rem;
 }
 .Products{
   display: flex;
@@ -12,73 +10,71 @@
   justify-content: space-between;
 }
 .main{
-  font-size: 300%;
+  font-size: 2.5rem;
   letter-spacing: .4rem;
   margin: 5rem;
 }
 
 .Product_main{
   display: block;
-  width: 210%;
+  // width: 210%;
 
 }
 .subProucts{
   display: block;
-  padding: 0rem 10rem;
+  padding-left:5rem;
 }
-
+@media only screen and (max-width: 500px) {
+  .Product_sub{
+    flex-wrap: wrap;
+  }
+}
 .Product_sub{
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .main_image{
-  width:100%;
+  width:45rem;
+  // height: 100%;
 
 }
 .main_image:hover{
   cursor: pointer;
 }
-.text {
-  color: black;
-  font-size: 5rem;
-  border: .3rem solid black;
-  padding: 2rem;
-  position: absolute;
-  width: 13%;
-  bottom: -5%;
-  right: 34%;
-  display: block;
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: .3rem;
-}
+// .text {
+//   color: black;
+//   font-size: 5rem;
+//   border: .3rem solid black;
+//   padding: 2rem;
+//   position: absolute;
+//   width: 13%;
+//   bottom: -5%;
+//   right: 34%;
+//   display: block;
+//   text-align: center;
+//   font-weight: 300;
+//   letter-spacing: .3rem;
+// }
 
-.sub_image1{
-  width:35%;
-  height: 100%;
+.Product_sub img{
+  width:30rem;
+  height: 70%;
 }
-.sub_image1:hover{
-  cursor: pointer;
-}
-.sub_image2{
-  width:35%;
-  float: right;
-  height: 100%;
-}
-.sub_image2:hover{
-  cursor: pointer;
+.Product_sub img:hover{
+  cursor: pointer
 }
 .title{
-  font-size: 350%;
+  font-size: 3rem;
   letter-spacing: .4rem;
   padding: 0rem 2rem;
 }
 .description{
-  font-size: 150%;
+  font-size: 2rem;
   letter-spacing: .2rem;
   padding: 0rem 2rem;
 }
 .Sub_container{
-  width: 50%;
+  // width: 50%;
 }

@@ -19,7 +19,7 @@ class MainCategory extends Component {
                       <p className={Class.desc}>{Category.CategoryDesc}</p>
                       <p className={Class.Button}>Explore Now</p>
                     </div>
-                    <img style={style2} src={Category.CategoryImage} alt="Vikas"/>
+                    <div><img style={style2} src={Category.CategoryImage} alt="Vikas"/></div>
                   </div>
         }
       )
